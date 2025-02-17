@@ -1,0 +1,102 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 20%);
+}
+
+#calculatorContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 7%);
+    border-radius: 30px;
+}
+
+#displayBox
+{
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(180, 100%, 97%);
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+}
+
+#buttonsContainer
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 0px 0px 0px;
+}
+
+.buttons
+{
+    margin: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    border: none;
+    font-size: 3em;
+    font-weight: bold;
+    background-color: hsl(0, 0%, 30%);
+    color: whitesmoke;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.buttons:hover
+{
+    background-color: hsla(48, 78%, 51%, 0.914);
+}
+.buttons:active
+{
+    background-color: greenyellow;
+}
+
+#allClear
+{
+    background-color: red;
+    transition: background-color 0.3s;
+}
+#allClear:hover
+{
+    background-color: hsla(48, 78%, 51%, 0.914);
+}
+#allClear:active
+{
+    background-color: yellowgreen;
+}
+
+#clear
+{
+    background-color: hsl(300, 76%, 52%);
+    transition: background-color 0.3s;
+}
+#clear:hover
+{
+    background-color: hsla(48, 78%, 51%, 0.914);
+}
+#clear:active
+{
+    background-color: yellowgreen;
+}
+
+#equal
+{
+    background-color: green;
+    transition: background-color 0.3s;
+}
+#equal:hover
+{
+    background-color: hsla(48, 78%, 51%, 0.914);
+}
+#equal:active
+{
+    background-color: yellowgreen;
+}

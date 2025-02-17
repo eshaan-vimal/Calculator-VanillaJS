@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+
+
+    <body>
+
+        <div id="calculatorContainer">
+
+            <div id="displayContainer">
+                <input type="text" readonly id="displayBox">
+            </div>
+
+            <div id="buttonsContainer">
+
+                <button id="lefBracket" class="buttons" onclick="addToDisplay(`(`)">(</button>
+                <button id="rightBracket" class="buttons" onclick="addToDisplay(`)`)">)</button>
+                <button id="clear" class="buttons" onclick="clearDisplay()">C</button>
+                <button id="allClear" class="buttons" onclick="allClearDisplay()">AC</button>
+
+                <button id="one" class="buttons" onclick="addToDisplay(`1`)">1</button>
+                <button id="two" class="buttons" onclick="addToDisplay(`2`)">2</button>
+                <button id="three" class="buttons" onclick="addToDisplay(`3`)">3</button>
+                <button id="divide" class="buttons" onclick="addToDisplay(`÷`)">÷</button>
+
+                <button id="four" class="buttons" onclick="addToDisplay(`4`)">4</button>
+                <button id="five" class="buttons" onclick="addToDisplay(`5`)">5</button>
+                <button id="six" class="buttons" onclick="addToDisplay(`6`)">6</button>
+                <button id="multiply" class="buttons" onclick="addToDisplay(`×`)">×</button>
+
+                <button id="seven" class="buttons" onclick="addToDisplay(`7`)">7</button>
+                <button id="eight" class="buttons" onclick="addToDisplay(`8`)">8</button>
+                <button id="nine" class="buttons" onclick="addToDisplay(`9`)">9</button>
+                <button id="subtract" class="buttons" onclick="addToDisplay(`-`)">-</button>
+                
+                <button id="zero" class="buttons" onclick="addToDisplay(`0`)">0</button>
+                <button id="point" class="buttons" onclick="addToDisplay(`.`)">.</button>
+                <button id="equal" class="buttons" onclick="calculateDisplay()">=</button>
+                <button id="add" class="buttons" onclick="addToDisplay(`+`)">+</button>
+
+            </div>
+
+        </div>
+
+        <script src="./index.js"></script>
+
+    </body>
+
+</html>
